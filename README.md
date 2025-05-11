@@ -10,10 +10,14 @@ This is a modern TypeScript project setup for learning TypeScript from scratch.
 ├── dist/          # Compiled JavaScript files
 ├── package.json   # Project configuration and dependencies
 ├── tsconfig.json  # TypeScript configuration
+├── Dockerfile     # Docker configuration
+├── docker-compose.yml # Docker Compose configuration
 └── README.md      # This file
 ```
 
 ## Getting Started
+
+### Option 1: Local Development
 
 1. Install dependencies:
    ```bash
@@ -35,6 +39,23 @@ This is a modern TypeScript project setup for learning TypeScript from scratch.
    npm start      # Run the compiled JavaScript
    ```
 
+### Option 2: Docker Development
+
+1. Build and start the containers:
+   ```bash
+   docker-compose up --build
+   ```
+
+2. To run in detached mode:
+   ```bash
+   docker-compose up -d
+   ```
+
+3. To stop the containers:
+   ```bash
+   docker-compose down
+   ```
+
 ## Available Scripts
 
 - `npm run dev`: Start development server with hot-reload
@@ -50,3 +71,4 @@ This is a modern TypeScript project setup for learning TypeScript from scratch.
 - Source maps for debugging
 - Strict type checking
 - ES2020 features support
+- Docker support for consistent development environments

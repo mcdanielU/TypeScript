@@ -32,6 +32,6 @@ const multiply = (a: number, b: number): number => a * b;
 
 // Example usage
 console.log(`Hello ${name}!`);
-console.log(`Person: ${JSON.stringify(person, null, 2)}`);
-console.log(`Sum: ${add(5, 3)}`);
+console.log(`Person: ${JSON.stringify(person, null, 4)}`);
+console.log(`Sum: ${add(8, 3)}`);
 console.log(`Product: ${multiply(4, 2)}`); 
